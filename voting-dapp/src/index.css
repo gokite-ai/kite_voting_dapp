@@ -1,0 +1,118 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #eef6fc;
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Wallet */
+.wallet-address {
+  font-size: 0.8rem;
+  color: #555;
+  background-color: #ffffff;
+  font-weight: 500;
+  padding: 25px;
+  text-align: center;
+  word-break: break-all;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 32px 28px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.card h2 {
+  font-size: 1.9rem;
+  color: #007acc;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+/* Vote count */
+.vote-count {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Vote status */
+.vote-status {
+  margin-top: 24px;
+  font-weight: 600;
+  color: #16a34a;
+  font-size: 1rem;
+}
+
+/* Button container */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Buttons */
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007acc;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #005fa3;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #eaf4fc;
+  color: #007acc;
+  border: 1px solid #007acc;
+}
+
+.btn-secondary:hover {
+  background-color: #d8ecfc;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
